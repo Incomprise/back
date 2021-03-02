@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PartenairesController!{% endblock %}
+
+{% block body %}
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    {% block stylesheets %}
+        <link href="{{ asset('styles/partenaires.css') }}" type="text/css" rel="stylesheet">
+        
+        {% endblock %}
+
+</head>
+
+<body>
+
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+      <a href="{{ path('accueil') }}" class="active">Nation Sounds</a>
+      <div id="myLinks">
+        <a href="{{ path('informations') }}">Informations</a>
+        <a href="{{ path('programme') }}">Programme</a>
+        <a href="{{ path('carte') }}">Carte</a>
+        <a href="{{ path('ticket') }}">Billetterie</a>
+        <a href="{{ path('faq') }}">FAQ</a>
+        <a href="{{ path('partenaires') }}">Partenaires</a>
+        <a href="{{ path('social') }}">Reseaux sociaux</a>
+
+
+
+
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <h1>Nos partenaires</h1>
+        <br>
+        <div class="partenairesimg">
+            <img src="{{ asset('styles/imgs/air bus.png') }}" alt="airbus" height="150px">
+            <img src="{{ asset('styles/imgs/La-dépeche-site-300x172.png') }}" alt="la dépeche" height="150px">
+            <img src="{{ asset('styles/imgs/redbull.png') }}" alt="REDBUL" height="150px">
+
+            <img src="{{ asset('styles/imgs/carrefour.png') }}" alt="CARREFOUR" height="150px">
+        </div>
+        <div class="join">
+            <p>Rejoignez la communauté Nation Sounds !</p>
+
+
+        </div>
+        <br>
+        <br>
+
+        <footer>
+            <p>Copyright 2021 - Nation Sounds Festival </p>
+
+        </footer>
+
+
+       
+
+</body>
+
+</html>
+{% endblock %}
+
+{% block javascripts %}
+<script src="{{ asset('js/app.js') }}"></script>
+{% endblock %}

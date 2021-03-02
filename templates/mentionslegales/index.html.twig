@@ -1,0 +1,114 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mentions Légales{% endblock %}
+
+{% block body %}
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+{% block stylesheets %}
+        <link href="{{ asset('styles/informations.css') }}" type="text/css" rel="stylesheet">
+        
+        {% endblock %}
+</head>
+<!-- Simulate a smartphone / tablet -->
+  <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="{{ path('accueil') }}" class="active">Nation Sounds</a>
+      <div id="myLinks">
+        <a href="{{ path('informations') }}">Informations</a>
+        <a href="{{ path('programme') }}">Programme</a>
+        <a href="{{ path('carte') }}">Carte</a>
+        <a href="{{ path('ticket') }}">Billetterie</a>
+        <a href="{{ path('faq') }}">FAQ</a>
+        <a href="{{ path('partenaires') }}">Partenaires</a>
+        <a href="{{ path('social') }}">Reseaux sociaux</a>
+
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+<h3>IDENTIFICATION DE L’ÉDITEUR</h3>
+ </hr>
+<p>Direction de l’information légale et administrative</br>
+Nation Sounds</br>
+Parc de la Villette</br>
+75000 Paris</br>
+<i>email : contact@nationsounds.fr</i></br>
+Directeur de la publication : Live Event</p></br>
+</hr>
+ 
+<h3>PRESTATAIRE D’HÉBERGEMENT</h3>
+</hr>
+<p>1&1 INTERNET SARL</br>
+7, place de la Gare</br>
+57200 Sarreguemines</br>
+SARL au capital de 100 000 EUROS, RCS Sarreguemines : 431 303 775.</p></br>
+</hr>
+ 
+<h3>DONNEES PERSONNELLES</h3>
+<p>Notre site ne demande pas d’enregistrement nominatif à ses visiteurs et ne procède à aucun enregistrement nominatif pour la simple consultation de ses pages.
+Cependant, dans certains cas (fonctionnalités de partage et aux modules sociaux, formulaires de contact, participation à un jeu-concours, paiement en ligne…), vous pouvez être invité à laisser des données personnelles (noms, prénoms, numéros de téléphones, adresses postales, adresse électronique…). Le caractère obligatoire ou facultatif des données vous est signalé lors de la collecte par un astérisque.
+Le cas échéant, le formulaire de collecte pourra être accompagné d’une case à cocher vous permettant d’accepter ou de refuser que vos données soient utilisées à des fins commerciales pour le compte de tiers, et/ou cédées à des tiers.
+Nous ne collectons aucune donnée sensible, à savoir aucune donnée relative à vos origines raciales ou ethniques, à vos opinions politiques, philosophiques ou religieuses ou votre appartenance syndicale, ou qui sont relatives à votre santé ou votre vie sexuelle.
+Par ailleurs, lors de la consultation de notre site web, nous sommes amenés à collecter et traiter des données relatives à votre navigation (notamment les cookies, votre adresse IP, les pages que vous avez consultées et les recherches que vous avez effectuées), et à votre terminal (type de navigateur utilisé, modèle et version de votre système d’exploitation, résolution de votre écran, présence de certains plug-ins, …). Nous réaliserons également une géolocalisation approximative de votre ville d’origine. Ces données seront utilisées d’une part pour réaliser des statistiques d’utilisation de notre site afin de le rendre plus pertinent, pour identifier les sociétés s’intéressant à nos produits., et pour vous proposer des offres publicitaires sur et en dehors de notre site en rapport avec vos centres d’intérêt et, éventuellement, de votre localité.
+Cookies.<br>
+Les cookies sont des petits fichiers textes stockés dans votre navigateur lorsque vous consultez notre site sous réserve du paramétrage de votre navigateur et qui vont être utilisés pour reconnaître votre terminal lorsque vous vous connectez à notre site afin :</br>
+1.	d’établir des statistiques et comptages de fréquentation et d’utilisation des diverses rubriques et contenus de notre site afin de réaliser des études pour en améliorer le contenu ;</br>
+2.	d’adapter du contenu publicitaire à vos centres d’intérêts et, éventuellement, votre localité, qui résultent des données de navigation de votre terminal parmi les rubriques de notre site sans que nous n’ayons de données personnelles permettant de vous identifier ou de vous contacter directement.</br>
+>
+Vos droits</br>
+Conformément à la loi Informatique et Libertés du 6 janvier 1978 modifiée par la loi du 6 août 2004, vous disposez de droits d’accès, de rectification et d’opposition aux données personnelles vous concernant. Vous pouvez exercer ces droits :</br>
+1.	En ce qui concerne les donnés collectées par le biais du formulaire de contact : les droits peuvent être exercés directement auprès de nous</br>
+Vous pouvez également consulter notre page d’information spécifique aux cookies afin de refuser, si vous le désirez, le dépôt de cookies lorsque vous naviguez sur notre site.</p></br></hr>
+
+
+<h3>CONCEPTION GRAPHIQUE</h3>
+</hr>
+<p>La conception et les développements graphiques et ergonomiques ainsi que le développement des modèles de pages ont été réalisés par la société ARPEGA.</p></br>
+ 
+
+<h3>GESTIONNAIRE DES STATISTIQUES</h3></br>
+ 
+<h3>LIVE EVENT</h3></hr>
+<p>Champ de Mars</br>
+5 Avenue Anatole France</br>
+75007 Paris</br>
+Tél : 00 00 00 00 00</p></br></hr>
+ 
+<h3>REFERENCEMENT SITE INTERNET</h3></br>
+ 
+<h4>LIVE EVENT</h4></hr>
+<p>Champ de Mars</br>
+5 Avenue Anatole France</br>
+75007 Paris</br>
+Tél : 00 00 00 00 00</p></br></hr>
+ 
+<h3>HEBERGEMENT SITE INTERNET</h3></br>
+ 
+<h4>LIVE EVENT</h4></hr>
+<p>Champ de Mars</br>
+5 Avenue Anatole France</br>
+75007 Paris</br>
+Tél : 00 00 00 00 00</p></br></hr>
+
+<h3>LIENS HYPERTEXTES (RESPONSABILITÉ)</h3></hr>
+<p>Ce site internet propose des liens vers d’autres sites. Nous indiquons systématiquement vers quel site nous vous proposons d’aller. Cependant, ces pages web dont les adresses sont régulièrement vérifiées ne font pas partie de ce site : elles n’engagent pas la responsabilité de la rédaction du site.</p></hr>
+ 
+<h3>PROPRIÉTÉ INTELLECTUELLE</h3></br>
+ 
+<h4>Droit de reproduction</h4></br>
+<p>La reproduction ou réutilisation des contenus de ce site est autorisée sous réserve de mentionner la date et la source et plus globalement de respecter la licence ouverte. La copie des autres pages du site, des logos et des cartes doit avoir obtenu l’autorisation du directeur de la publication. La création de liens est possible après accord de notre part.</p>
+</div>
+
+<footer id="footer5">
+      Copyright 2021 - Nation Sounds Festival </footer>
+
+{% endblock %}
+
+{% block javascripts %}
+<script src="{{ asset('js/app.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Informations{% endblock %}
+
+{% block body %}
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+{% block stylesheets %}
+        <link href="{{ asset('styles/informations.css') }}" type="text/css" rel="stylesheet">
+        
+        {% endblock %}
+</head>
+
+<body>
+
+  <!-- Simulate a smartphone / tablet -->
+  <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="{{ path('accueil') }}" class="active">Nation Sounds</a>
+      <div id="myLinks">
+        <a href="{{ path('informations') }}">Informations</a>
+        <a href="{{ path('programme') }}">Programme</a>
+        <a href="{{ path('carte') }}">Carte</a>
+        <a href="{{ path('ticket') }}">Billetterie</a>
+        <a href="{{ path('faq') }}">FAQ</a>
+        <a href="{{ path('partenaires') }}">Partenaires</a>
+        <a href="{{ path('social') }}">Reseaux sociaux</a>
+
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
+    <section class="meteo4">
+      <div class="meteo">
+        <h1>Informations</h1>
+        <h2>
+          Paris
+          <br />
+          Température 23°C
+        </h2>
+        <img src="{{ asset('styles/imgs/meteo.png') }}" alt="meteo" id="imgmeteo">
+      </div>
+      <hr id="hr">
+      <div class="infosimportantes4">
+        <div class="pannelectricite">
+          <h2>! PANNE D’ELECTRICITE SUR LA SCENE NUMERO 1 ! </h2>
+        </div>
+        <img src="{{ asset('styles/imgs/cle.png') }}" alt="cle" id="imgcle" style="Width:380px">
+        <p style="color:white;font-style: italic;">La scène numéro 1 a subi une panne d’électricité aujourd’hui à 14h.
+          Nous mettons tout en oeuvre pour réparer le problème. Nous sommes désolés pour la gêne occasionnée.</p>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <footer id="footer5">
+      Copyright 2021 - Nation Sounds Festival </footer>
+
+    
+
+</body>
+
+</html>
+{% endblock %}
+
+{% block javascripts %}
+<script src="{{ asset('js/app.js') }}"></script>
+{% endblock %}

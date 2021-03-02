@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+<h1>Inscription</h1>
+
+{{ form(form) }}
+<html>
+  <head>
+    <title>reCAPTCHA demo: Simple page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <form  method="POST">
+      <div class="g-recaptcha" data-sitekey="6LfTD2YaAAAAAKPQNBEsJRHsKE3fifNk3Rf-Xi-N"></div>
+      <br/>
+    </form>
+  </body>
+</html>
+{% endblock %}

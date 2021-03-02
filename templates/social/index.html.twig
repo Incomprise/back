@@ -1,0 +1,106 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos réseaux sociaux{% endblock %}
+
+{% block body %}
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  {% block stylesheets %}
+        <link href="{{ asset('styles/style.css') }}" type="text/css" rel="stylesheet">  
+    {% endblock %}
+
+
+</head>
+
+<body>
+
+  <!-- Simulate a smartphone / tablet -->
+  <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="{{ path('accueil') }}" class="active">Nation Sounds</a>
+      <div id="myLinks">
+        <a href="{{ path('informations') }}">Informations</a>
+        <a href="{{ path('programme') }}">Programme</a>
+        <a href="{{ path('carte') }}">Carte</a>
+        <a href="{{ path('ticket') }}">Billetterie</a>
+        <a href="{{ path('faq') }}">FAQ</a>
+        <a href="{{ path('partenaires') }}">Partenaires</a>
+        <a href="{{ path('social') }}">Reseaux sociaux</a>
+
+
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+<div class="contaire34">
+
+  <div class="join2">
+    <p>"Rejoignez-nous vite, nous sommes déja plus de 25 000"</p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="fb">
+    <a href="https://www.facebook.com/nationsoundsfrance"> <img src="{{ asset('styles/imgs/fb.png') }}" alt="logofb" height="120px"
+        width="120px"> </a>
+  </div>
+
+
+
+
+
+
+  <div class="twitter">
+    <a href="https://twitter.com/foundsoundnat"><img src="{{ asset('styles/imgs/twitter.png') }}" alt="logotwit" height="120px"
+        width="120px"> </a>
+  </div>
+
+  <div class="insta">
+    <a href="https://www.instagram.com/nationsoundsfrance/"> <img src="{{ asset('styles/imgs/insta.png') }}" alt="logoinsta" height="120px"
+        width="120px"> </a>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+  <div class="join1">
+
+    <p>"Il ne manque plus que vous !"</p>
+  </div>
+
+  <br>
+  <br><br>
+
+
+</div>
+    
+    <footer>
+      <div class="footer">
+        <p>Copyright 2021 - Nation Sounds Festival </p>
+
+
+      </div>
+
+
+      
+
+</body>
+
+</html>
+{% endblock %}
+
+{% block javascripts %}
+<script src="{{ asset('js/app.js') }}"></script>
+{% endblock %}

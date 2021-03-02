@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Carte{% endblock %}
+
+{% block body %}
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=>, initial-scale=1.0">
+  <title>Plan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  {% block stylesheets %}
+        <link href="{{ asset('styles/easy-button.css') }}" type="text/css" rel="stylesheet">
+        <link href="{{ asset('styles/leaflet-tag-filter-button.css') }}" type="text/css" rel="stylesheet">
+        <link href="{{ asset('styles/style.css') }}" type="text/css" rel="stylesheet">
+        {% endblock %}
+
+</head>
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+      <a href="{{ path('accueil') }}" class="active">Nation Sounds</a>
+      <div id="myLinks">
+        <a href="{{ path('informations') }}">Informations</a>
+        <a href="{{ path('programme') }}">Programme</a>
+        <a href="{{ path('carte') }}">Carte</a>
+        <a href="{{ path('ticket') }}">Billetterie</a>
+        <a href="{{ path('faq') }}">FAQ</a>
+        <a href="{{ path('partenaires') }}">Partenaires</a>
+        <a href="{{ path('social') }}">Reseaux sociaux</a>
+
+
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <body onload="init()">
+
+
+    <div class="maptitre">
+      <h3>PLAN DU FESTIVAL</h3>
+    </div>
+    <div id="mapid"></div>
+
+    <footer>
+      <div class="footer">
+        <p>Copyright 2021 - Nation Sounds Festival </p>
+
+
+      </div>
+    </footer>
+  </body>
+
+</html>
+{% endblock %}
+
+
+
+{% block javascripts %}
+<script src="{{ asset('js/app.js') }}"></script>
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+<script src="{{ asset('styles/js/easy-button.js') }}"></script>
+<script src="{{ asset('styles/js/leaflet-tag-filter-button.js') }}"></script>
+<script src="{{ asset('styles/js/main.js') }}"></script>
+{% endblock %}          

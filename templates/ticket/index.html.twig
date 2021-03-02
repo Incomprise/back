@@ -1,0 +1,109 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ticket{% endblock %}
+
+{% block body %}
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  {% block stylesheets %}
+        <link href="{{ asset('styles/billeterie.css') }}" type="text/css" rel="stylesheet">  
+    {% endblock %}
+
+</head>
+
+<body>
+
+  <!-- Simulate a smartphone / tablet -->
+  <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <div id="myLinks">
+      <a href="{{ path('accueil') }}" class="active">Nation Sounds</a>
+        <a href="{{ path('informations') }}">Informations</a>
+        <a href="{{ path('programme') }}">Programme</a>
+        <a href="{{ path('carte') }}">Carte</a>
+        <a href="{{ path('ticket') }}">Billetterie</a>
+        <a href="{{ path('faq') }}">FAQ</a>
+        <a href="{{ path('partenaires') }}">Partenaires</a>
+        <a href="{{ path('social') }}">Reseaux sociaux</a>
+      </div>
+
+      <div class="icon">
+        <a href="javascript:void(0);" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+    </div>
+
+
+    <h1>Billetterie</h1>
+    <br>
+    <br>
+    <div class="container1">40€ /personne</div>
+
+    <br>
+
+    <div class="container2">PASS 1 JOUR <br> <br> 1 BOISSON OFFERTE</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <a href="https://www.billetweb.fr/nation-sounds1"><button class="button"><span>ACHETER</span></button></a>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <br>
+    <br>
+    <footer>
+      <div class="footer2">
+        <p>Copyright 2021 - Nation Sounds Festival </p>
+
+
+      </div>
+    </footer>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+</body>
+
+</html>
+{% endblock %}
+
+
+
+{% block javascripts %}
+<script src="{{ asset('js/app.js') }}"></script>
+{% endblock %}

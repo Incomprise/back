@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}FAQ{% endblock %}
+
+{% block body %}
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  {% block stylesheets %}
+        <link href="{{ asset('styles/style.css') }}" type="text/css" rel="stylesheet">
+        
+        {% endblock %}
+
+</head>
+
+<body>
+
+  <!-- Simulate a smartphone / tablet -->
+  <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="{{ path('accueil') }}" class="active">Nation Sounds</a>
+      <div id="myLinks">
+        <a href="{{ path('informations') }}">Informations</a>
+        <a href="{{ path('programme') }}">Programme</a>
+        <a href="{{ path('carte') }}">Carte</a>
+        <a href="{{ path('ticket') }}">Billetterie</a>
+        <a href="{{ path('faq') }}">FAQ</a>
+        <a href="{{ path('partenaires') }}">Partenaires</a>
+        <a href="{{ path('social') }}">Reseaux sociaux</a>
+
+
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
+
+    <div class="faq">
+      <h1>FAQ</h1>
+    </div>
+
+
+    <img src="{{ asset('styles/imgs/fiesta.jpg') }}" alt="fiestaboumboum" width="100%">
+     
+    <div class="faqask">
+      <h3>Règles générales du festival</h3>
+      <a href=""><img src="{{ asset('styles/imgs/fleche.png') }}" alt="faqflecge" height="60px" width="60px"> </a>
+    </div>
+
+    <div class="faqask">
+      <h3>Lors du festival</h3>
+      <a href=""><img src="{{ asset('styles/imgs/fleche.png') }}" alt="faqflecge" height="60px" width="60px"> </a>
+    </div>
+
+    
+
+    <div class="faqask">
+      <h3>Services proposés</h3>
+      <a href=""><img src="{{ asset('styles/imgs/fleche.png') }}" alt="faqflecge" height="60px" width="60px"> </a>
+    </div>
+
+    <div class="faqask">
+      <h3>Gérer son compte de paiement</h3>
+      <a href=""><img src="{{ asset('styles/imgs/fleche.png') }}" alt="faqflecge" height="60px" width="60px"> </a>
+    </div>
+
+    <div class="faqask">
+      <h3>Revente</h3>
+      <a href=""><img src="{{ asset('styles/imgs/fleche.png') }}" alt="faqflecge" height="60px" width="60px"> </a>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <p>Copyright 2021 - Nation Sounds Festival </p>
+
+
+      </div>
+    </footer>
+
+
+</body>
+
+</html>
+{% endblock %}
+
+{% block javascripts %}
+<script src="{{ asset('js/app.js') }}"></script>
+
+{% endblock %}

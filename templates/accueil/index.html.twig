@@ -1,0 +1,158 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nation Sounds{% endblock %}
+
+{% block body %}
+
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="{{ asset('styles/imgs/logonationsound.jpg') }}">
+
+        {% block stylesheets %}
+        <link href="{{ asset('styles/acceuil.css') }}" type="text/css" rel="stylesheet">
+        
+        {% endblock %}
+        
+</head>
+
+<body>
+
+  <!-- Simulate a smartphone / tablet -->
+  <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+
+
+
+    <div class="topnav">
+      <div class="image-container">
+        <img src="{{ asset('styles/imgs/logonationsound.jpg') }}" alt="logo festi" height="48px" width="46.58px">
+      </div>
+
+      <div class="icones">
+      <div class="example-wrapper">
+    
+    {% if app.user %}
+    <a href="{{path('compte') }}"><i class="fa fa-fw fa-user"></i></a>
+    <a href="{{path('app_logout') }}">Déconnexion</a>
+    {% else %}
+    <a href="{{path('inscription') }}">Inscription</a>
+   <a href="{{path('app_login') }}"><i class="fa fa-fw fa-user"></i></a>
+    {% endif %}
+ 
+    </div>
+    </div>
+
+        <div id="myLinks">
+          <a href="{{ path('accueil') }}" class="active">Nation Sounds</a>
+          <a href="{{ path('informations') }}">Informations</a>
+          <a href="{{ path('programme') }}">Programme</a>
+          <a href="{{ path('carte') }}">Carte</a>
+          <a href="{{ path('ticket') }}">Billetterie</a>
+          <a href="{{ path('faq') }}">FAQ</a>
+          <a href="{{ path('partenaires') }}">Partenaires</a>
+          <a href="{{ path('social') }}">Reseaux sociaux</a>
+        </div>
+     
+  
+
+      <div class="icon">
+        <a href="./login.html" onclick="myFunction()">
+          <i class="fa fa-fw fa-user"></i>
+        </a>
+        </div>
+
+        <div class="icon">
+        <a href="javascript:void(0);" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    
+    </div>
+       
+      
+
+    <div class="container2">
+
+      <section class="infosimportantes">
+        <h1>INFORMATIONS IMPORTANTES</h1>
+        <br>
+        <br>
+        <h3> ! PANNE D'ELECTRICITE SUR LA SCENE 1 !</h3>
+        <br>
+
+        <div class='nextprevious' style="text-align:center; margin-top: -28px">
+          <span class="dot1"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <a href="{{path('informations')}}"><button class="button"><span>PLUS D'INFORMATIONS</span></button></a>
+      </section>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- FIN PREMIERE SECTION-->
+
+      <section class="seconde">
+
+        <div class="lienbordure">
+          <p>BILLETTERIE</p>
+          <a href="{{path('ticket')}}"><input type="image" id="image7" alt="Login" src="{{ asset('styles/imgs/nextpage.png') }}" height="40px" width="40px"></a>
+        </div>
+        <div class="lienbordure2">
+          <p>Actualités générales</p>
+          <a href="{{path('informations')}}"><input type="image" id="image8" alt="Login" src="{{ asset('styles/imgs/nextpage.png') }}" height="40px" width="40px"></a>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="resauxsociaux">
+      <p>Rejoignez la communauté Nation Sounds !</p>
+    </div>
+    <div>
+      <div class="fb">
+        <a href="#" class="fa fa-facebook"></a>
+      </div>
+      <div class="twit">
+        <a href="#" class="fa fa-twitter"></a>
+      </div>
+      <div class="inst">
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+    </div>
+
+    </section>
+
+    <footer>
+      <div class="footer">
+        <p>Copyright 2021 - Nation Sounds Festival </p>
+        <a href="{{path('mentionslegales') }}"><i>Mentions légales</i></a>
+
+
+      </div>
+    </footer>
+
+    
+{% block javascripts %}{% endblock %}
+<script src="{{ asset('js/app.js') }}"></script>
+    
+
+</body>
+
+</html>
+
+
+{% endblock %}

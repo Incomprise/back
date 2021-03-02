@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Programme{% endblock %}
+
+{% block body %}
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    {% block stylesheets %}
+        <link href="{{ asset('styles/style.css') }}" type="text/css" rel="stylesheet"> 
+        <link href="{{ asset('styles/sortable.css') }}" type="text/css" rel="stylesheet"> 
+    {% endblock %}
+
+</head>
+
+<body>
+
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="{{ path('accueil') }}" class="active">Nation Sounds</a>
+      <div id="myLinks">
+        <a href="{{ path('informations') }}">Informations</a>
+        <a href="{{ path('programme') }}">Programme</a>
+        <a href="{{ path('carte') }}">Carte</a>
+        <a href="{{ path('ticket') }}">Billetterie</a>
+        <a href="{{ path('faq') }}">FAQ</a>
+        <a href="{{ path('partenaires') }}">Partenaires</a>
+        <a href="{{ path('social') }}">Reseaux sociaux</a>
+
+
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+        
+
+        
+
+
+        
+
+</body>
+
+</html>
+<div class="col-md-9">
+    <h1>Programme</h1>
+    <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+        
+        <th class="th-sm">Nom</th>
+        
+        <th class="th-sm">Scenes</th>
+
+        <th class="th-sm">Heures</th>
+
+        <th class="th-sm">Artistes</th>
+    </tr>
+    {% for programme in programme %}
+        <tr>
+            <td>{{ programme.name }}</td>
+            <td>{{ programme.scenes }}</td>
+            <td>{{ programme.heure|date('H:i') }}</td>
+            <td>{{ programme.artistes }}</td>
+        </tr>
+    {% endfor %}
+    </thead>
+    </table>
+</div>
+<footer>
+            <div class="footer">
+                <p>Copyright 2021 - Nation Sounds Festival </p>
+
+
+            </div>
+        </footer>
+{% endblock %}
+
+{% block javascripts %}
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/sortable.js') }}"></script>
+{% endblock %}
