@@ -13,7 +13,7 @@ body {
   margin-top: -10px;
 }
 .container2 {
-  background: url('../styles/imgs/concert.png');
+  background: url('./imgs/concert.png');
   margin-top: -25px;
 }
 .lienbordure p {
@@ -215,4 +215,10 @@ h1 {
   color: white;
   border-top: 3px solid #ff5757;
   margin-bottom: -17px;
+  text-decoration: none;
+}
+
+.footer a {
+  text-decoration: none;
+  color: yellow;
 }

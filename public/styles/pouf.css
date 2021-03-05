@@ -1,0 +1,32 @@
+ul {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  ul li {
+    list-style: none;
+    color: red;
+    letter-spacing: 4px;
+    font-size: 25px;
+    animation: flash 1.4s linear infinite;
+  }
+  
+  @keyframes flash {
+    0% {
+      color: 	#8B0000;
+      text-shadow: none;
+    }
+    90% {
+      color: #FF0000;
+      text-shadow: none;
+    }
+    100% {
+      color: #F08080;
+      text-shadow: 0 0 7px blueviolet, 0 0 50px yellow;
+    }
+  }

@@ -14,7 +14,7 @@ function init() {
 
 
     var positionIcon = L.icon({
-      iconUrl: '/imgs/loalisation.png',
+      iconUrl: 'styles/imgs/prout_geo.png',
       
       iconSize:     [65, 65], // size of the icon
       iconAnchor:   [30, 60], // point of the icon which will correspond to marker's location
@@ -23,7 +23,7 @@ function init() {
 
 
   var snackIcon = L.icon({
-    iconUrl: '/imgs/snack.png',
+    iconUrl: '/styles/imgs/snack.png',
     
     iconSize:     [65, 65], // size of the icon
     iconAnchor:   [30, 60], // point of the icon which will correspond to marker's location
@@ -32,7 +32,7 @@ function init() {
 
 
 var sceneIcon = L.icon({
-  iconUrl: '/imgs/scene.png',
+  iconUrl: '/styles/imgs/scene.png',
   
   iconSize:     [65, 65], // size of the icon
   iconAnchor:   [30, 60], // point of the icon which will correspond to marker's location
@@ -41,7 +41,7 @@ var sceneIcon = L.icon({
 
 
 var wcIcon = L.icon({
-  iconUrl: '/imgs/wc.png',
+  iconUrl: '/styles/imgs/wc.png',
   
   iconSize:     [65, 65], // size of the icon
   iconAnchor:   [30, 60], // point of the icon which will correspond to marker's location
@@ -50,7 +50,7 @@ var wcIcon = L.icon({
 
 
 var barIcon = L.icon({
-  iconUrl: '/imgs/bar.png',
+  iconUrl: '/styles/imgs/bar.png',
   
   iconSize:     [65, 65], // size of the icon
   iconAnchor:   [30, 60], // point of the icon which will correspond to marker's location
@@ -60,7 +60,7 @@ var barIcon = L.icon({
 
 
 var soinIcon = L.icon({
-  iconUrl: '/imgs/soin.png',
+  iconUrl: '/styles/imgs/soin.png',
   
   iconSize:     [65, 65], // size of the icon
   iconAnchor:   [30, 60], // point of the icon which will correspond to marker's location
@@ -69,7 +69,7 @@ var soinIcon = L.icon({
 
 
 var campingIcon = L.icon({
-  iconUrl: '/imgs/bonhomme_1.png',
+  iconUrl: '/styles/imgs/bonhomme_1.png',
   
   iconSize:     [65, 65], // size of the icon
   iconAnchor:   [30, 60], // point of the icon which will correspond to marker's location

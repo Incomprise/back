@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="style.css">
 
     {% block stylesheets %}
-        <link href="{{ asset('styles/style.css') }}" type="text/css" rel="stylesheet"> 
-        <link href="{{ asset('styles/sortable.css') }}" type="text/css" rel="stylesheet"> 
+        <link href="{{ asset('styles/fourretout.css') }}" type="text/css" rel="stylesheet"> 
+      
     {% endblock %}
 
 </head>
@@ -58,7 +58,7 @@
     <thead>
     <tr>
         
-        <th class="th-sm">Nom</th>
+        <th class="th-sm">Nom</th></hr>
         
         <th class="th-sm">Scenes</th>
 
@@ -68,7 +68,7 @@
     </tr>
     {% for programme in programme %}
         <tr>
-            <td>{{ programme.name }}</td>
+            <td>{{ programme.name }}</td></hr>
             <td>{{ programme.scenes }}</td>
             <td>{{ programme.heure|date('H:i') }}</td>
             <td>{{ programme.artistes }}</td>

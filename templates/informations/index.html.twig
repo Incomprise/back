@@ -11,6 +11,7 @@
   
 {% block stylesheets %}
         <link href="{{ asset('styles/informations.css') }}" type="text/css" rel="stylesheet">
+      <link href="{{ asset('styles/pouf.css') }}" type="text/css" rel="stylesheet">
         
         {% endblock %}
 </head>
@@ -47,14 +48,28 @@
           <br />
           Température 23°C
         </h2>
-        <img src="{{ asset('styles/imgs/meteo.png') }}" alt="meteo" id="imgmeteo">
+        <img src="{{ asset('/imgs/meteo.png') }}" alt="meteo" id="imgmeteo">
       </div>
       <hr id="hr">
       <div class="infosimportantes4">
         <div class="pannelectricite">
+        <ul>
+          <li>P</li>
+          <li>A</li>
+          <li>N</li>
+          <li>N</li>
+          <li>E</li>
+        </ul>
           <h2>! PANNE D’ELECTRICITE SUR LA SCENE NUMERO 1 ! </h2>
         </div>
-        <img src="{{ asset('styles/imgs/cle.png') }}" alt="cle" id="imgcle" style="Width:380px">
+             {% for infos in infos %}
+        <tr>
+            <td>{{ infos.name }}</td></hr>
+         
+           
+        </tr>
+    {% endfor %}
+        <img src="{{ asset('/imgs/cle.png') }}" alt="cle" id="imgcle" style="Width:380px">
         <p style="color:white;font-style: italic;">La scène numéro 1 a subi une panne d’électricité aujourd’hui à 14h.
           Nous mettons tout en oeuvre pour réparer le problème. Nous sommes désolés pour la gêne occasionnée.</p>
       </div>
@@ -62,6 +77,8 @@
     <br>
     <br>
     <br>
+
+</html>
 
     <footer id="footer5">
       Copyright 2021 - Nation Sounds Festival </footer>
@@ -75,4 +92,6 @@
 
 {% block javascripts %}
 <script src="{{ asset('js/app.js') }}"></script>
+
+
 {% endblock %}
